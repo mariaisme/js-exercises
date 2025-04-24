@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="javascript.js"></script>
+    <title>Document</title>
+</head>
+<body>
+There's 2 ways to add javascript to your page.
+<ol>
+    <li>internally</li>
+        <ul>
+            <li>adding a script tag inside the body</li>
+        </ul>
+    <li>externally</li>
+        <ul>
+            <li>importing an extarnal script with the .js file type in the head</li>
+        </ul>
+</ol>
+The console logs will show the extarnal script first, then the internal script.<br>
+This is because of the order the page code is read.<br>
+I don't suppose you need to add ; at the end of each line for the internal script
+    <script>
+        // Your JavaScript goes here!
+        console.log("Hello, World!")
+        let a = 10
+        console.log(a)
+        a  = 2
+        console.log(a)
+        let b = 7 * a
+        console.log(b)
+        const max = 57
+        const actual = max - 13
+        const percentage = actual / max
+        console.log(percentage)
+    </script>
+      
+</body>
+</html>
