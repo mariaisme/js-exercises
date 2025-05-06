@@ -20,8 +20,60 @@
         const greeting = document.querySelector("#greeting");
         greeting.textContent = `Hello ${name}, nice to see you!`;
         }
-
         button.addEventListener("click",greet);
     </script>
+    <br>
+    from: https://www.w3schools.com/js/js_string_methods.asp
+    <h2>JavaScript String Methods</h2>
+    <ul>
+        <li>.length     - it counts how many characters there are in the attached string</li>
+        <li>.charAt(n)  - where n is a number, it takes the character in that position. Counting starts at 0</li>
+        <li>.charCodeAt(n)   - where n is a number, it shows the UTF-16 code of the character at that position </li>
+        <li>.at(n)      - similar to .charAt, but can handle negative indexes. If negative, it counts right to left instead of left to right.</li>
+    </ul>
+    Note:<br>if n is larger than the length of the string, it will be undefined
+    <h2>Extracting Parts of a String</h2>
+    <ul>
+        <li>slice(start, end)
+            <ul><li>starts at the first index, ends before the next index. Also accepts negative indexes.</li></ul></li>
+        <li>substring(start, end)
+            <ul><li>similar to slice, but negative indexes are considered as 0.</li></ul></li>
+        <li>substr(start, length)
+            <ul><li>starts at the index and ends at the specified length.</li>
+            <li>if length is not included, it will show the rest of the string</li>
+            <li>only accepts one negative index</li></ul></li>
+    </ul>
+    <h2>String to Uppercase and Lowercase</h2>
+    <ul>
+        <li>.toUpperCase() - when attached to a string, it turns all of the characters to uppercase</li>
+        <li>.toLowerCase() - when attached to a string, it turns all of the characters to lowercase</li>
+    </ul>
+    <h2>Trim</h2>
+    <ul>
+        <li>.trim() - removes white spaces at the start and end of a string </li>
+        <li>.trimStart() - removes white spaces at the start of a string</li>
+        <li>.trimEnd() - removes white spaces at the end of a string</li>
+    </ul>
+    <h2>Padding</h2>
+    <ul>
+        <li>.padStart(length, padding) - pads a string at the start with the padding until the length is reached</li>
+        <li>.padEnd(length, padding) - pads a string at the end with the padding until the length is reached</li>
+        <li>.trimEnd() - removes white spaces at the end of a string</li>
+    </ul>
+    Note: <br>To pad a number, turn them into a string first.
+    <h2>Repeat</h2>
+    <ul>
+        <li>.repeat(n) - repeats the string for n amount of times</li>
+    </ul>
+    <h2>Replace</h2>
+    <ul>
+        <li>.replace(OldWord, NewWord) - finds the old word with the new word. Only works for the first word found.</li>
+        <li>.replaceAll(OldWord,NewWord) - replaces all the OldWord with the NewWord.</li>
+    </ul>
+    Notes: <br>This is case sensitive. <br> To find it regardless turn it into this /OldWord/i (insensitive)<br> To change all matches turn it into this /OldWord/g (global match).<br>To do both, turn it into this /OldWord/ig
+    <h2>String to Array</h2>
+    <ul>
+        <li>.split(",") - splits the string between the listed character ",". Only using "" will result in every letter being split</li>
+    </ul>
 </body>
 </html>
